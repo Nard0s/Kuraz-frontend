@@ -5,10 +5,7 @@ import FilterButtons from "./components/FilterButtons";
 import "./App.css";
 
 function App() {
-  const [tasks, setTasks] = useState([
-    { id: 1, title: "Buy groceries", completed: false },
-    { id: 2, title: "Read a book", completed: true },
-  ]);
+  const [tasks, setTasks] = useState([ ]);
   const [filter, setFilter] = useState("all");
   const [error, setError] = useState("");
 
