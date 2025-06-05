@@ -42,6 +42,9 @@ function App() {
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
+  const deleteAllTasks = () => {
+  setTasks([]); //clears all tasks
+};
 
   return (
     <div id="container">
@@ -49,10 +52,12 @@ function App() {
       <TaskInput addTask={addTask} error={error} />
       <FilterButtons currentFilter={filter} setFilter={setFilter} />
       <TaskList
-        tasks={filteredTasks}
-        toggleTask={toggleTask}
-        deleteTask={deleteTask}
+          tasks={tasks}
+          toggleTask={toggleTask}
+          deleteTask={deleteTask}
+          deleteAll={deleteAllTasks} 
       />
+
     </div>
   );
 }

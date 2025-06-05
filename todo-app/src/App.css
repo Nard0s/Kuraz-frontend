@@ -99,3 +99,9 @@ ul#task-list li.completed button.delete-btn {
   color: white;
   border-color: #007bff;
 }
+ul.scroll {
+  max-height: 10rem; /* Set your preferred height */
+  overflow-y: auto;
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+}
