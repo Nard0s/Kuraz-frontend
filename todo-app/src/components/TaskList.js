@@ -20,11 +20,17 @@ function TaskList({ tasks, toggleTask, deleteTask, deleteAll }) {
           <li><p>No tasks yet!</p></li>
         )}
       </ul>
-
-      <hr className="counter" />
+      
       <div className="counter-container">
         <p><span id="todoCount">{tasks.length}</span> items total</p>
-        <button id="deleteButton" onClick={deleteAll}>Delete All</button>
+        <button
+          id="deleteButton"
+          className="delete-all-btn"
+          onClick={deleteAll}
+          disabled={tasks.length === 0}
+        >
+          Delete All
+        </button>
       </div>
     </section>
   );

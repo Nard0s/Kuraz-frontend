@@ -52,11 +52,11 @@ function App() {
       <TaskInput addTask={addTask} error={error} />
       <FilterButtons currentFilter={filter} setFilter={setFilter} />
       <TaskList
-          tasks={tasks}
-          toggleTask={toggleTask}
-          deleteTask={deleteTask}
-          deleteAll={deleteAllTasks} 
-      />
+  tasks={filteredTasks}
+  toggleTask={toggleTask}
+  deleteTask={deleteTask}
+  deleteAll={deleteAllTasks} 
+/>
 
     </div>
   );

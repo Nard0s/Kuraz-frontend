@@ -105,3 +105,28 @@ ul.scroll {
   margin-top: 1rem;
   border-top: 1px solid #eee;
 }
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  color:gray;
+  border-top: 1px solid rgb(163, 148, 148);
+  padding-top: 0.8rem;
+}
+.counter-container p {
+  margin: 0;
+  font-size: 1rem;
+}
+.delete-all-btn {
+  border: none;
+  background-color: transparent;
+  color:gray;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.delete-all-btn:hover {
+  color: red;
+}
